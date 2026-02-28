@@ -219,8 +219,8 @@ export const Footer = () => {
               © {currentYear} Ayvant IT & Cybersecurity Inc. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-zinc-500 hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="text-zinc-500 hover:text-white transition-colors">Terms of Service</a>
+              <Link to="/privacy-policy" className="text-zinc-500 hover:text-white transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="text-zinc-500 hover:text-white transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>
