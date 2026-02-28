@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Cookie, X } from 'lucide-react';
+import { Cookie } from 'lucide-react';
 import { Button } from './ui/button';
 
 export const CookieConsent = () => {
@@ -28,12 +28,12 @@ export const CookieConsent = () => {
 
   return (
     <div 
-      className="fixed bottom-0 left-0 right-0 z-[100] bg-zinc-900 border-t border-zinc-800 shadow-2xl animate-fade-in-up"
+      className="fixed bottom-0 left-0 right-0 z-[9999] bg-zinc-900 border-t border-zinc-800 shadow-2xl animate-fade-in-up"
       data-testid="cookie-consent-banner"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-4 flex-1">
             <div className="hidden sm:flex w-10 h-10 rounded-sm bg-[#E31837]/20 items-center justify-center flex-shrink-0">
               <Cookie className="w-5 h-5 text-[#E31837]" />
             </div>
@@ -50,10 +50,11 @@ export const CookieConsent = () => {
               </Link>
             </div>
           </div>
-          <div className="flex items-center gap-3 flex-shrink-0">
+          {/* Button positioned on the left side to avoid chat widget overlap */}
+          <div className="flex items-center gap-3 flex-shrink-0 sm:mr-20">
             <Button
               onClick={acceptCookies}
-              className="bg-[#E31837] hover:bg-[#C4122C] text-white px-8 py-2 font-semibold rounded-sm transition-all duration-300"
+              className="bg-[#E31837] hover:bg-[#C4122C] text-white px-8 py-2 font-semibold rounded-sm transition-all duration-300 shadow-lg"
               data-testid="cookie-accept-btn"
             >
               OK
