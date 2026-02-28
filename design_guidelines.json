@@ -1,0 +1,177 @@
+{
+  "design_system": {
+    "brand_identity": {
+      "name": "Ayvant IT & Cybersecurity Inc.",
+      "archetype": "Swiss & High-Contrast (Authority, Clarity)",
+      "tone": "Professional, Human, Comprehensive, Secure",
+      "target_audience": "Law Firms, Accountants, Immigration Firms in Vancouver/Lower Mainland",
+      "core_values": ["Security First", "Local Expertise", "Human-Centric IT"]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Chivo, sans-serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-black tracking-tight leading-none",
+        "h2": "text-4xl md:text-5xl font-bold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-bold tracking-tight",
+        "body_lg": "text-lg md:text-xl leading-relaxed text-zinc-600",
+        "body_base": "text-base leading-relaxed text-zinc-600",
+        "caption": "text-sm font-medium tracking-wide uppercase text-zinc-500"
+      }
+    },
+    "colors": {
+      "primary": {
+        "DEFAULT": "#E31837",
+        "foreground": "#FFFFFF",
+        "hover": "#C4122C"
+      },
+      "secondary": {
+        "DEFAULT": "#0A0A0A",
+        "foreground": "#FFFFFF"
+      },
+      "background": {
+        "DEFAULT": "#FFFFFF",
+        "subtle": "#F4F4F5",
+        "dark": "#09090B"
+      },
+      "text": {
+        "DEFAULT": "#18181B",
+        "muted": "#71717A",
+        "inverted": "#FFFFFF"
+      },
+      "border": {
+        "DEFAULT": "#E4E4E7",
+        "active": "#E31837"
+      }
+    },
+    "layout": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "spacing": {
+        "section_py": "py-24 md:py-32",
+        "element_gap": "gap-8 md:gap-12"
+      },
+      "grid_systems": {
+        "bento": "grid grid-cols-1 md:grid-cols-3 gap-6",
+        "hero": "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center",
+        "features": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-[#E31837] text-white hover:bg-[#C4122C] rounded-sm px-8 py-4 font-bold tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1",
+        "secondary": "bg-white text-[#0A0A0A] border-2 border-[#0A0A0A] hover:bg-[#0A0A0A] hover:text-white rounded-sm px-8 py-4 font-bold tracking-wide transition-all duration-300",
+        "ghost": "text-[#0A0A0A] hover:text-[#E31837] font-medium transition-colors"
+      },
+      "cards": {
+        "base": "bg-white border border-zinc-200 p-8 rounded-sm hover:border-[#E31837] transition-colors duration-300 group relative overflow-hidden",
+        "feature": "bg-zinc-50 p-8 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-zinc-200"
+      },
+      "navbar": {
+        "style": "sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200/50 supports-[backdrop-filter]:bg-white/60"
+      }
+    },
+    "visual_enhancers": {
+      "shadows": {
+        "soft": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+        "sharp": "shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+      },
+      "borders": {
+        "tech": "border-l-4 border-[#E31837]"
+      },
+      "gradients": {
+        "subtle_red": "bg-gradient-to-br from-white to-red-50",
+        "dark_cyber": "bg-gradient-to-br from-zinc-900 to-black"
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "sections": ["Hero", "ServicesOverview", "WhyChooseUs", "IndustriesServed", "Testimonials", "CTA"],
+      "hero_image": "https://images.unsplash.com/photo-1748332725467-6f0f9fbeb840?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "hero_alt": "Vancouver Skyline at Dusk"
+    },
+    "cybersecurity": {
+      "sections": ["Hero", "ThreatLandscape", "ServicesList", "Compliance", "CTA"],
+      "hero_image": "https://images.unsplash.com/photo-1770520215615-af0f13c7fab8?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "hero_alt": "Abstract Red and Black Cybersecurity Shield"
+    },
+    "it_support": {
+      "sections": ["Hero", "ManagedServices", "HelpDesk", "Onboarding", "CTA"],
+      "hero_image": "https://images.unsplash.com/photo-1594915440248-1e419eba6611?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "hero_alt": "Professional Server Rack Equipment"
+    },
+    "about": {
+      "sections": ["Story", "Team", "Values", "Location"],
+      "hero_image": "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "hero_alt": "Diverse Professional Team"
+    },
+    "contact": {
+      "sections": ["ContactInfo", "GHLForm", "Map"],
+      "hero_image": "https://images.unsplash.com/photo-1603850601874-1207149b57d6?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "hero_alt": "Vancouver City View"
+    }
+  },
+  "image_assets": {
+    "hero_backgrounds": [
+      "https://images.unsplash.com/photo-1748332725467-6f0f9fbeb840?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1603850601874-1207149b57d6?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ],
+    "cyber_abstracts": [
+      "https://images.unsplash.com/photo-1770520215615-af0f13c7fab8?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1771013304371-f36ff3812c17?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1767477665606-a29603e1c479?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ],
+    "office_professionals": [
+      "https://images.unsplash.com/photo-1758518731462-d091b0b4ed0d?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1758519288417-d359ac3c494d?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ],
+    "tech_equipment": [
+      "https://images.unsplash.com/photo-1594915440248-1e419eba6611?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ]
+  },
+  "integrations": {
+    "go_high_level": {
+      "contact_form_id": "ghl-contact-form-placeholder",
+      "chat_widget_id": "ghl-chat-widget-placeholder",
+      "newsletter_id": "ghl-newsletter-placeholder",
+      "client_portal_url": "#"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use 'Chivo' for all headings and 'Manrope' for body text. Import from Google Fonts.",
+    "Implement a 'Swiss Style' layout: high contrast, grid-based, lots of white space.",
+    "Use the primary red (#E31837) sparingly for CTAs and key accents only. Do not use it for large backgrounds.",
+    "Ensure all 'Cybersecurity' pages have a slightly darker, more technical feel (using Zinc-900 backgrounds for sections) compared to the 'IT Support' pages (mostly White/Zinc-50).",
+    "For the 'Industries Served' section, use the 'Lawyer' and 'Accountant' images provided to build trust with the specific target audience.",
+    "Create placeholder divs for Go High Level integrations with the specified IDs. Add a comment in the code: '<!-- GHL Integration Placeholder -->'.",
+    "Use Lucide React icons for all UI iconography. Use 'Shield', 'Lock', 'Server', 'Users', 'Activity' icons primarily.",
+    "Ensure the 'Contact' page includes a map placeholder for Langley, BC.",
+    "The 'About' page must emphasize 'Local Expertise' in Vancouver/Lower Mainland.",
+    "Use the provided logo URL in the Navbar and Footer: https://customer-assets.emergentagent.com/job_3b3d2e10-bde7-4823-bcb1-d3b5421626ce/artifacts/lfqh4i3f_ayvant.png"
+  ],
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
