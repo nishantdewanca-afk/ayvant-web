@@ -2,6 +2,8 @@ import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { CookieConsent } from "./components/CookieConsent";
+import { ExitIntentPopup } from "./components/ExitIntentPopup";
 import Home from "./pages/Home";
 import Cybersecurity from "./pages/Cybersecurity";
 import ITSupport from "./pages/ITSupport";
@@ -10,6 +12,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import CookiePolicy from "./pages/CookiePolicy";
 import {
   ITSupportVancouver,
   ITSupportSurrey,
@@ -51,9 +54,12 @@ function App() {
             {/* Legal pages */}
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
           </Routes>
         </main>
         <Footer />
+        <CookieConsent />
+        <ExitIntentPopup />
       </BrowserRouter>
     </div>
   );
