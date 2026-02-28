@@ -1,71 +1,88 @@
 # Ayvant IT & Cybersecurity Inc. - Website PRD
 
 ## Original Problem Statement
-Build a website for Managed IT & Cybersecurity. The name of the business is Ayvant IT & Cybersecurity Inc. The company is based in Langley, British Columbia and provides services to businesses in Vancouver and Lower Mainland Area. Primarily targeting Law Firms, Accountants, Immigration Firms, and other businesses. Theme to match the color theme of the logo: red (#E31837), white, and black. Content should sound human and comprehensive.
+Build a website for Managed IT & Cybersecurity for Ayvant IT & Cybersecurity Inc. based in Langley, British Columbia, serving Vancouver and Lower Mainland. Target: Law Firms, Accountants, Immigration Firms. Theme: red (#E31837), white, black.
 
 ## User Persona
-- **Primary Target**: Law Firms, Accounting Firms, Immigration Consultants in Vancouver/Lower Mainland
-- **Secondary Target**: Other professional service businesses
-- **Decision Makers**: Partners, Managing Directors, Office Managers looking for IT support and cybersecurity solutions
+- **Primary Target**: Law Firms, Accounting Firms in Vancouver/Lower Mainland
+- **Secondary Target**: Immigration Consultants, Professional Service Businesses
+- **Decision Makers**: Partners, Managing Directors, Office Managers
 
 ## Core Requirements (Static)
 - Professional marketing website with red, white, black color scheme
 - Pages: Home, Cybersecurity, IT Support, IT Consulting, About, Contact
 - Primary focus on Cybersecurity services, followed by IT Support
-- Use "IT Support" terminology over "Managed IT"
 - Human-centric, jargon-free content
-- Placeholder integrations for Go High Level CRM
+- Go High Level CRM integrations
 
-## What's Been Implemented (December 2025)
+## What's Been Implemented
 
-### Pages Completed
-1. **Home Page** - Hero section, services overview, industries served (Law Firms, Accountants, Immigration Firms), testimonials, CTA
-2. **Cybersecurity Page** - Threat landscape, security services, compliance management, 24/7 monitoring
-3. **IT Support Page** - Help desk, proactive monitoring, cloud services, hardware/network management, support plans
-4. **IT Consulting Page** - IT strategy, digital transformation, infrastructure planning, compliance consulting
-5. **About Page** - Company story, values, team sections, location map (Langley, BC)
-6. **Contact Page** - Contact form, contact info, Google Maps integration, emergency call button
+### Phase 1 (Initial Build)
+- 6 main pages with comprehensive content
+- Swiss-style high-contrast design with Chivo/Manrope typography
+- Responsive layouts and mobile navigation
+- Testimonials section
+- Industries served (Law Firms, Accountants, Immigration Firms)
 
-### Components
-- **Navbar** - Responsive with mobile menu, Client Portal link placeholder, CTA button
-- **Footer** - Newsletter signup placeholder, services links, contact info, social links
+### Phase 2 (GHL Integration & SEO Pages) - December 2025
+**GHL Integrations:**
+- ✅ Contact Form - iframe embedded on Contact page
+- ✅ Newsletter Form - iframe embedded in Footer
+- ✅ Chat Widget - Global script in index.html (appears on all pages)
+- ✅ Client Portal - Link updated to https://ayvant-ca.app.clientclub.net/
 
-### Design System
-- Typography: Chivo (headings), Manrope (body)
-- Colors: Primary Red (#E31837), Black (#0A0A0A), White
-- Swiss-style high-contrast design with professional B2B tone
+**Contact Info Updates:**
+- ✅ Phone: (604) 239-2090
+- ✅ Email: hello@ayvant.ca
+- ✅ Langley Office: 20627 Fraser Hwy, Langley, BC V3A 4G4
+- ✅ Surrey Office: 2677 192 St. Suite 102, Surrey, BC V3S 3X1
 
-### GHL Integration Placeholders (Ready for Integration)
-- `#ghl-contact-form-placeholder` - Contact form
-- `#ghl-chat-widget-placeholder` - Live chat widget
-- `#ghl-newsletter-placeholder` - Newsletter signup
-- `#ghl-client-portal-placeholder` - Client portal link
-- `#ghl-booking-placeholder` - Booking calendar
+**10 Location-Based SEO Pages:**
+1. ✅ /it-support-vancouver
+2. ✅ /it-support-surrey
+3. ✅ /it-support-langley
+4. ✅ /it-support-burnaby
+5. ✅ /it-support-richmond
+6. ✅ /it-support-coquitlam
+7. ✅ /it-support-port-moody
+8. ✅ /it-support-delta
+9. ✅ /it-support-abbotsford
+10. ✅ /it-support-chilliwack
+
+Each location page includes:
+- Unique city-specific content
+- Law Firms section with software tools (Clio, PCLaw, etc.)
+- Accountants section with software tools (QuickBooks, Sage, TaxCycle, etc.)
+- Local neighborhoods served
+- Interlinks to other service areas
+- SEO-optimized headings and content
 
 ## Prioritized Backlog
 
-### P0 (User Requested - Pending GHL Codes)
-- [ ] Integrate Go High Level contact form embed code
-- [ ] Integrate Go High Level live chat widget
-- [ ] Integrate Go High Level newsletter signup form
-- [ ] Add Client Portal URL from Go High Level
+### P0 (Completed)
+- [x] GHL contact form integration
+- [x] GHL newsletter form integration
+- [x] GHL chat widget integration
+- [x] Client Portal link
+- [x] Updated contact information
+- [x] 10 location SEO pages
 
-### P1 (Recommended Enhancements)
-- [ ] Add actual phone number and email addresses
+### P1 (Recommended)
 - [ ] Add real testimonials from clients
 - [ ] Add case studies/success stories page
-- [ ] SEO optimization (meta tags, sitemap)
-- [ ] Add blog/resources section
+- [ ] Meta tags for each page (SEO)
+- [ ] XML sitemap generation
+- [ ] Google Analytics integration
 
 ### P2 (Nice to Have)
 - [ ] Add pricing calculator
-- [ ] Add service area map visualization
 - [ ] Add team member individual profiles
 - [ ] Add certifications/partnerships badges
+- [ ] Add blog/resources section
 - [ ] Add FAQ page
 
-## Next Action Items
-1. User to provide Go High Level embed codes for integrations
-2. User to provide actual contact information (phone, email)
-3. User to provide real client testimonials
-4. User to provide Client Portal URL
+## Technical Notes
+- Chat widget loaded via script in /public/index.html
+- GHL forms use iframe embeds
+- Location pages share LocationPages.jsx component with unique data per city
+- Service area links in footer for SEO internal linking
