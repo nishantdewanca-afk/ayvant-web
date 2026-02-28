@@ -27,7 +27,7 @@ export const Navbar = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_3b3d2e10-bde7-4823-bcb1-d3b5421626ce/artifacts/lfqh4i3f_ayvant.png" 
               alt="Ayvant IT & Cybersecurity" 
-              className="h-12 w-auto"
+              className="h-[50px] w-auto"
             />
           </Link>
 
@@ -53,12 +53,11 @@ export const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-3">
             {/* Client Portal Link - GHL Integration Placeholder */}
             <a 
-              href="#" 
+              href="https://ayvant-ca.app.clientclub.net/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-zinc-700 hover:text-[#E31837] transition-colors"
               data-testid="client-portal-link"
-              id="ghl-client-portal-placeholder"
             >
               Client Portal <ExternalLink className="w-4 h-4" />
             </a>
@@ -105,9 +104,10 @@ export const Navbar = () => {
             ))}
             <div className="pt-4 border-t border-zinc-200 space-y-3">
               <a 
-                href="#" 
+                href="https://ayvant-ca.app.clientclub.net/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-4 py-3 text-zinc-700 font-medium"
-                id="ghl-client-portal-mobile-placeholder"
               >
                 Client Portal <ExternalLink className="w-4 h-4" />
               </a>
