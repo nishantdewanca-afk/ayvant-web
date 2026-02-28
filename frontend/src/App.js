@@ -8,6 +8,8 @@ import ITSupport from "./pages/ITSupport";
 import ITConsulting from "./pages/ITConsulting";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import {
   ITSupportVancouver,
   ITSupportSurrey,
@@ -46,6 +48,9 @@ function App() {
             <Route path="/it-support-delta" element={<ITSupportDelta />} />
             <Route path="/it-support-abbotsford" element={<ITSupportAbbotsford />} />
             <Route path="/it-support-chilliwack" element={<ITSupportChilliwack />} />
+            {/* Legal pages */}
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
           </Routes>
         </main>
         <Footer />
