@@ -25,7 +25,7 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center" data-testid="nav-logo">
             <img 
-              src="https://customer-assets.emergentagent.com/job_3b3d2e10-bde7-4823-bcb1-d3b5421626ce/artifacts/lfqh4i3f_ayvant.png" 
+              src="https://customer-assets.emergentagent.com/job_bc-it-solutions/artifacts/ensfyszf_Screenshot%202026-02-28%20at%2012.55.23%E2%80%AFAM.png" 
               alt="Ayvant IT & Cybersecurity" 
               className="h-[50px] w-auto"
             />
