@@ -7,26 +7,16 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 
 export default function Contact() {
-  // Load GHL scripts
+  // Load GHL form embed script only
   useEffect(() => {
-    // Load form embed script
     const formScript = document.createElement('script');
     formScript.src = 'https://link.msgsndr.com/js/form_embed.js';
     formScript.async = true;
     document.body.appendChild(formScript);
 
-    // Load chat widget script
-    const chatScript = document.createElement('script');
-    chatScript.src = 'https://beta.leadconnectorhq.com/loader.js';
-    chatScript.setAttribute('data-resources-url', 'https://beta.leadconnectorhq.com/chat-widget/loader.js');
-    chatScript.setAttribute('data-widget-id', '69a2a83d95702f720374ab00');
-    chatScript.async = true;
-    document.body.appendChild(chatScript);
-
     return () => {
-      document.body.removeChild(formScript);
-      if (document.body.contains(chatScript)) {
-        document.body.removeChild(chatScript);
+      if (document.body.contains(formScript)) {
+        document.body.removeChild(formScript);
       }
     };
   }, []);
