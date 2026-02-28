@@ -83,7 +83,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <img 
-              src="https://customer-assets.emergentagent.com/job_bc-it-solutions/artifacts/ensfyszf_Screenshot%202026-02-28%20at%2012.55.23%E2%80%AFAM.png" 
+              src="https://customer-assets.emergentagent.com/job_bc-it-solutions/artifacts/gxout8lv_ayvant%20%281%29.png" 
               alt="Ayvant IT & Cybersecurity" 
               className="h-[50px] w-auto mb-6"
             />
