@@ -50,11 +50,11 @@ export const CookieConsent = () => {
               </Link>
             </div>
           </div>
-          {/* Button positioned on the left side to avoid chat widget overlap */}
-          <div className="flex items-center gap-3 flex-shrink-0 sm:mr-20">
+          {/* Button positioned clearly away from chat widget on right */}
+          <div className="flex items-center gap-3 flex-shrink-0 order-first sm:order-none">
             <Button
               onClick={acceptCookies}
-              className="bg-[#E31837] hover:bg-[#C4122C] text-white px-8 py-2 font-semibold rounded-sm transition-all duration-300 shadow-lg"
+              className="bg-[#E31837] hover:bg-[#C4122C] text-white px-10 py-3 font-bold rounded-sm transition-all duration-300 shadow-lg text-base"
               data-testid="cookie-accept-btn"
             >
               OK
