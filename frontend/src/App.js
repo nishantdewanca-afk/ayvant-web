@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
@@ -23,21 +22,6 @@ import {
 } from "./pages/LocationPages";
 
 function App() {
-  // Load GHL chat widget globally
-  useEffect(() => {
-    const chatScript = document.createElement('script');
-    chatScript.src = 'https://beta.leadconnectorhq.com/loader.js';
-    chatScript.setAttribute('data-resources-url', 'https://beta.leadconnectorhq.com/chat-widget/loader.js');
-    chatScript.setAttribute('data-widget-id', '69a2a83d95702f720374ab00');
-    chatScript.async = true;
-    document.body.appendChild(chatScript);
-
-    return () => {
-      if (document.body.contains(chatScript)) {
-        document.body.removeChild(chatScript);
-      }
-    };
-  }, []);
 
   return (
     <div className="App">
