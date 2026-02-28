@@ -205,11 +205,10 @@ export default function About() {
               </p>
               <div className="flex items-center gap-3 text-zinc-300 mb-6">
                 <MapPin className="w-6 h-6 text-[#E31837]" />
-                <span>Serving Vancouver & Lower Mainland from Langley and Surrey</span>
+                <span>Serving Vancouver & Lower Mainland from Langley, BC</span>
               </div>
               <div className="space-y-3 text-zinc-400 text-sm mb-6">
-                <p><strong className="text-white">Langley Office:</strong> 20627 Fraser Hwy, Langley, BC V3A 4G4</p>
-                <p><strong className="text-white">Surrey Office:</strong> 2677 192 St. Suite 102, Surrey, BC V3S 3X1</p>
+                <p><strong className="text-white">Office:</strong> 20627 Fraser Hwy, Langley, BC V3A 4G4</p>
               </div>
               <div className="flex flex-wrap gap-3">
                 {['Vancouver', 'Surrey', 'Burnaby', 'Richmond', 'Langley', 'Coquitlam'].map((city) => (

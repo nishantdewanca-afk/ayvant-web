@@ -265,7 +265,6 @@ export default function TermsOfService() {
               <div className="space-y-3 text-zinc-300">
                 <p><strong className="text-white">Ayvant IT & Cybersecurity Inc.</strong></p>
                 <p>20627 Fraser Hwy, Langley, BC V3A 4G4</p>
-                <p>2677 192 St. Suite 102, Surrey, BC V3S 3X1</p>
                 <p>Email: <a href="mailto:hello@ayvant.ca" className="text-[#E31837] hover:underline">hello@ayvant.ca</a></p>
                 <p>Phone: <a href="tel:+16042392090" className="text-[#E31837] hover:underline">(604) 239-2090</a></p>
               </div>

@@ -24,13 +24,8 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: MapPin,
-      title: 'Langley Office',
+      title: 'Office',
       lines: ['20627 Fraser Hwy', 'Langley, BC V3A 4G4'],
-    },
-    {
-      icon: MapPin,
-      title: 'Surrey Office',
-      lines: ['2677 192 St. Suite 102', 'Surrey, BC V3S 3X1'],
     },
     {
       icon: Phone,
@@ -143,28 +138,19 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
-              {/* Office Locations */}
+              {/* Office Location */}
               <Card className="border-0 shadow-md">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-3 mb-6">
                     <MapPin className="w-6 h-6 text-[#E31837]" />
-                    <h3 className="text-xl font-bold text-zinc-900">Our Locations</h3>
+                    <h3 className="text-xl font-bold text-zinc-900">Our Location</h3>
                   </div>
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-bold text-zinc-900 mb-1">Langley Office</h4>
-                      <p className="text-zinc-600 text-sm">
-                        20627 Fraser Hwy<br />
-                        Langley, BC V3A 4G4
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-zinc-900 mb-1">Surrey Office</h4>
-                      <p className="text-zinc-600 text-sm">
-                        2677 192 St. Suite 102<br />
-                        Surrey, BC V3S 3X1
-                      </p>
-                    </div>
+                  <div>
+                    <h4 className="font-bold text-zinc-900 mb-1">Office</h4>
+                    <p className="text-zinc-600 text-sm">
+                      20627 Fraser Hwy<br />
+                      Langley, BC V3A 4G4
+                    </p>
                   </div>
                 </CardContent>
               </Card>

@@ -176,15 +176,8 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#E31837] flex-shrink-0 mt-0.5" />
                 <div className="text-zinc-400 text-sm">
-                  <p className="font-medium text-white mb-1">Langley Office</p>
+                  <p className="font-medium text-white mb-1">Office</p>
                   <p>20627 Fraser Hwy<br />Langley, BC V3A 4G4</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#E31837] flex-shrink-0 mt-0.5" />
-                <div className="text-zinc-400 text-sm">
-                  <p className="font-medium text-white mb-1">Surrey Office</p>
-                  <p>2677 192 St. Suite 102<br />Surrey, BC V3S 3X1</p>
                 </div>
               </li>
               <li className="flex items-center gap-3">
